@@ -68,7 +68,7 @@ a {
  }
  .slider{
  	display: flex;
-	justify-content: center;
+	justify-content: space-between;
  }
  .slide {
  	display: flex;
@@ -86,7 +86,49 @@ a {
 	line-height: 24px;
 	font-weight: 500;
 	color: #5d6367;
+	text-transform: none;
+ }
+ .slide li:last-child{
+ 	font-size: 16px;
+	line-height: 18px;
+	height: 35px;
+	width: 240px;
+	background-color: #fb565a;
+	border-radius: 5px;
+	text-align: center;
+	padding-top: 20px;
+	color: #ffffff;
+
+ }
+  .slide a{
+ color: #ffffff;
  }
   .slide img{
-	margin-left: 35px;
+	margin-left: 100px;
   }
+  .price-list {
+  	
+  
+  	background-color: #ffffff;
+ }
+ .price-item {
+ 	margin: 0 auto 0 auto;
+ 	width: 1440px;
+ 	display: flex;
+  	justify-content: flex-start;
+
+ }
+ .web-site, .applications, .presentations {
+ 	list-style: none;
+ 	
+ }
+.applications, .presentations{
+	margin-left: 100px;
+}
+  .web-site li:nth-child(2),
+   .applications li:nth-child(2),
+    .presentations li:nth-child(2) {
+ 	font-size: 24px;
+	line-height: 30px;
+	font-weight: 700;
+ }
