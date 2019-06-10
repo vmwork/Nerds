@@ -20,34 +20,73 @@ a {
  /*Стилизация шапки сайта */
 
  .main-navigation {
- 	border: 1px solid black;
+ 	
  	width: 1440px;
- 	margin: 47px auto 0 auto;
+ 	margin: 45px auto 35px auto;
 
  }
  .navigation-content {
 	display: flex;
  	justify-content: space-around;
+ 	align-items: flex-end;
+
 	
  }
 
- .main-navigation a {
+ .navigation-content a {
 	color: #000000;
-	
 
- }
+ 	width: 220px;
+
+	 }
  .site-navigation {
  	display: flex;
  	justify-content: space-between;
- 	align-items: flex-end;
  	width: 440px;
  	list-style: none;
+ 	font-size: 16px;
+	line-height: 24px;
+	font-weight: 700;
   }
 
  .site-basket {
  	display: flex;
+ 	list-style: none;
+ 	font-size: 16px;
+	line-height: 24px;
+	font-weight: 700;
  	justify-content: center;
- 	align-items: flex-end;
- 
+ 	width: 220px;
+ }
+ .contanier {
+ 	width: 1440px;
+ 	margin: 0 auto 0 auto;
+ }
+ .slider-presentation {
+ 	min-height: 413px;
+ 	width: 1440px;
+ }
+ .slider{
+ 	display: flex;
+	justify-content: center;
+ }
+ .slide {
+ 	display: flex;
+ }
+
+ .slide li {
  	list-style: none;
  }
+ .slide li:first-child{
+ 	font-size: 35px;
+	line-height: 75px;
+ }
+  .slide li:nth-child(2){
+ 	font-size: 16px;
+	line-height: 24px;
+	font-weight: 500;
+	color: #5d6367;
+ }
+  .slide img{
+	margin-left: 35px;
+  }
