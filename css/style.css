@@ -1,6 +1,7 @@
 /* Стандартные общие стили согласно цветовой гамме макета*/
 body {
-	margin: 0 auto;
+	min-width: 1200px;
+	margin: 0;
 	padding: 0;
 	
 	font-family: "Roboto", Arial, sans-serif;
@@ -10,125 +11,291 @@ body {
 	color: #000000;
 	background-color: #ffffff;
 	text-transform: uppercase;
-	background-image: url(../img/grey-back.jpg);
-	background-repeat: repeat;
-	background-position: top center;
+	background-color: #eeeeee;
 }
 a {
 	text-decoration: none;
 }
+
+
  /*Стилизация шапки сайта */
 
- .main-navigation {
- 	
- 	width: 1440px;
- 	margin: 45px auto 35px auto;
 
- }
- .navigation-content {
-	display: flex;
- 	justify-content: space-around;
- 	align-items: flex-end;
-
-	
- }
-
- .navigation-content a {
-	color: #000000;
-
- 	width: 220px;
-
-	 }
- .site-navigation {
- 	display: flex;
- 	justify-content: space-between;
- 	width: 440px;
- 	list-style: none;
- 	font-size: 16px;
-	line-height: 24px;
-	font-weight: 700;
-  }
-
- .site-basket {
- 	display: flex;
- 	list-style: none;
- 	font-size: 16px;
-	line-height: 24px;
-	font-weight: 700;
- 	justify-content: center;
- 	width: 220px;
- }
- .contanier {
- 	width: 1440px;
- 	margin: 0 auto 0 auto;
- }
- .slider-presentation {
- 	min-height: 413px;
- 	width: 1440px;
- }
- .slider{
- 	display: flex;
-	justify-content: space-between;
- }
- .slide {
- 	display: flex;
- }
-
- .slide li {
- 	list-style: none;
- }
- .slide li:first-child{
- 	font-size: 35px;
-	line-height: 75px;
- }
-  .slide li:nth-child(2){
- 	font-size: 16px;
-	line-height: 24px;
-	font-weight: 500;
-	color: #5d6367;
-	text-transform: none;
- }
- .slide li:last-child{
- 	font-size: 16px;
-	line-height: 18px;
-	height: 35px;
-	width: 240px;
-	background-color: #fb565a;
-	border-radius: 5px;
-	text-align: center;
-	padding-top: 20px;
-	color: #ffffff;
-
- }
-  .slide a{
- color: #ffffff;
- }
-  .slide img{
-	margin-left: 100px;
-  }
-  .price-list {
-  	
-  
-  	background-color: #ffffff;
- }
- .price-item {
- 	margin: 0 auto 0 auto;
- 	width: 1440px;
- 	display: flex;
-  	justify-content: flex-start;
-
- }
- .web-site, .applications, .presentations {
- 	list-style: none;
- 	
- }
-.applications, .presentations{
-	margin-left: 100px;
+.main-navigation {
+	width: 1160px;
+	margin: 0 auto;
+	margin-top: 55px;
 }
-  .web-site li:nth-child(2),
-   .applications li:nth-child(2),
-    .presentations li:nth-child(2) {
- 	font-size: 24px;
+
+.main-navigation-wrapper {
+
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+}
+.main-navigation-wrapper a:hover{
+	opacity: 0.8;
+}
+.main-navigation-wrapper a:active{
+	opacity: 0.3;
+}
+.site-navigation {
+	margin: 0;
+	padding: 0;
+	
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	align-items: center;
+	width: 430px;
+	color: #000000;
+	font-family: "Roboto", Arial, sans-serif;
+	font-size: 16px;
 	line-height: 30px;
 	font-weight: 700;
- }
+
+}
+.site-navigation li, .site-basket li{
+	list-style: none;
+
+}
+.site-navigation a,
+.site-basket a{
+	text-decoration: none;
+	color: #000000;
+}
+.site-navigation a:hover,
+.site-basket a:hover{
+color: #fb565a;
+}
+.site-navigation a:active,
+.site-basket a:active{
+color: #c3c3c3;
+}
+
+.site-basket {
+	position: relative;
+	margin: 0;
+	padding: 0 0 0 55px;
+	margin-left: 25px;
+	color: #000000;
+	font-family: "Roboto", Arial, sans-serif;
+	font-size: 16px;
+	line-height: 30px;
+	font-weight: 700;
+
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	align-items: center;
+}
+.site-basket::before{
+	content: "";
+	position: absolute;
+	top: 27px;
+	left: 20px;
+	width: 15px;
+	height: 15px;
+	background-image: url(../img/cart-icon.png);
+	background-repeat: no-repeat;
+	background-position: 0 0;
+}
+
+
+/*Стилизация шапки сайта  окончена*/
+
+/*Стилизация блока презентации компании */
+ .contanier{
+	width: 1160px;
+	margin: 0 auto;
+	margin-top: 5px;
+}
+.slider-presentation {
+	position: relative;
+	width: 100%;
+
+}
+.slide {
+	display: flex;
+	justify-content: space-between;
+
+}
+.slider-presentation img{
+	
+	margin-right: 27px;
+}
+.slide-3 img {
+	margin: 0;
+	padding: 0;
+
+}
+.slide-2 img {
+	margin: 0;
+	padding: 0;
+}
+
+
+.slide ul{
+	margin: 0;
+	padding: 0;
+	margin-top: 10px;
+	align-items: flex-start;
+	
+	list-style: none;
+
+}
+.slide li:first-child{
+	margin-top: 49px;
+	padding: 0;
+	font-family: "Roboto", Arial, sans-serif;
+	font-size: 38px;
+	line-height: 58px;
+	font-weight: 700;
+	text-transform: none;
+
+}
+.slide h2{
+	margin: 0;
+	padding: 0;
+}
+.slide li:nth-child(2){
+	margin: 0;
+	padding: 0;
+	font-family: "Roboto", Arial, sans-serif;
+	font-size: 16px;
+	line-height: 24px;
+	font-weight: 400;
+	text-transform: none;
+
+}
+.slide li:last-child{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-family: "Roboto", Arial, sans-serif;
+	font-size: 16px;
+	line-height: 24px;
+	font-weight: 400;
+	border-radius: 5px;
+	background-color: #fb565a;
+	width: 240px;
+	height: 50px;
+	margin-top: 45px;
+}
+.slide li:last-child:hover, .slide a:hover{
+	background-color: #e74246;
+	color: #fdf2f3;
+}
+.slide li:last-child:active, .slide a:active{
+	background-color: #d7373b;
+	color: #e26f72;
+}
+.slide a{
+	color: #ffffff;
+
+}
+/*Конец блока стилизация презентации компании */
+
+
+/*Стилизация блока перечня услуг предоставляемых компанией */
+.background-contanier{
+	min-width: 1200px;
+background-color: #ffffff
+}
+.price-list{
+	min-height: 510px;
+	border-bottom: 1px solid #eeeeee;
+	padding-top: 80px;
+	display: flex;
+	justify-content: space-between;
+	
+	background-image: none;
+}
+.item {
+	padding: 0;
+	margin: 0;
+	
+}
+.item li{
+	margin-right: 60px;
+	margin-bottom: 20px;
+	list-style: none;
+}
+
+.item li:nth-child(2){
+	font-family: "Roboto", Arial, sans-serif;
+	font-size: 24px;
+	line-height: 30px;
+	font-weight: 700;
+}
+.item li:nth-child(3){
+	padding: 0;
+	margin: 0;
+	font-family: "Roboto", Arial, sans-serif;
+	font-size: 16px;
+	line-height: 24px;
+	font-weight: 400;
+	text-transform: none;
+
+}
+.item li:last-child{
+display: flex;
+	justify-content: center;
+	align-items: center;
+	font-family: "Roboto", Arial, sans-serif;
+	font-size: 16px;
+	line-height: 24px;
+	font-weight: 400;
+	border-radius: 5px;
+	background-color: #fb565a;
+	width: 160px;
+	height: 50px;
+	margin-top: 25px;
+}
+.item a {
+	color: #ffffff;
+}
+.web-site li:last-child{
+background-color: #fb565a;
+}
+.applications li:last-child{
+background-color: #00ca74;
+}
+.presentations li:last-child{
+background-color: #efc84a;
+}
+.web-site li:last-child:hover{
+background-color: #e74246;
+}
+.applications li:last-child:hover{
+background-color: #00bc6c;
+}
+.presentations li:last-child:hover{
+background-color: #eab534;
+}
+.web-site li:last-child:active{
+background-color: #d7373b;
+color: #e37376;
+}
+.applications li:last-child:active{
+background-color: #00aa62;
+color: #4dc491;
+}
+.presentations li:last-child:active{
+background-color: #e5a722;
+color: #ebba53;
+}
+.web-site a:active{
+background-color: #d7373b;
+color: #e37376;
+}
+.applications a:active{
+background-color: #00aa62;
+color: #4dc491;
+}
+.presentations a:active{
+background-color: #e5a722;
+color: #ebba53;
+}
+/*Конец стилизации блока перечня услуг предоставляемых компанией */
+/*Стилизация блока О нашей дизайн-студии */
