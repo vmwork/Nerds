@@ -11,7 +11,7 @@ body {
 	color: #000000;
 	background-color: #ffffff;
 	text-transform: uppercase;
-	background-color: #eeeeee;
+	
 }
 a {
 	text-decoration: none;
@@ -20,11 +20,14 @@ a {
 
  /*Стилизация шапки сайта */
 
-
+.background-contanier1 {
+background-color:  #eeeeee;
+}
 .main-navigation {
 	width: 1160px;
 	margin: 0 auto;
-	margin-top: 55px;
+	padding-top: 55px;
+	
 }
 
 .main-navigation-wrapper {
@@ -198,12 +201,14 @@ color: #c3c3c3;
 
 
 /*Стилизация блока перечня услуг предоставляемых компанией */
-.background-contanier{
-	min-width: 1200px;
-background-color: #ffffff
+.background-contanier2{
+		width: 1160px;
+		margin: 0 auto;
+		background-color: #ffffff
 }
 .price-list{
-	min-height: 510px;
+
+height: 410px;
 	border-bottom: 1px solid #eeeeee;
 	padding-top: 80px;
 	display: flex;
@@ -217,7 +222,7 @@ background-color: #ffffff
 	
 }
 .item li{
-	margin-right: 60px;
+	margin-right: 100px;
 	margin-bottom: 20px;
 	list-style: none;
 }
@@ -299,3 +304,261 @@ color: #ebba53;
 }
 /*Конец стилизации блока перечня услуг предоставляемых компанией */
 /*Стилизация блока О нашей дизайн-студии */
+.feature-list li,
+ .feature-item li,
+ .item3 li{ 
+	list-style: none;
+ }
+ .features{
+ 	min-height: 485px;
+	border-bottom: 1px solid #eeeeee;
+ 	margin-top: 60px;
+ 		display: flex;
+ 		justify-content: space-between;
+ 
+ }
+ .features ul {
+ 	margin:  0 0 0 0;
+ 	padding: 0;
+ }
+ .feature-list li:first-child{ 
+		font-family: "Roboto", Arial, sans-serif;
+	font-size: 45px;
+	line-height: 45px;
+	font-weight: 700;
+	text-transform: none;
+	margin-top: 25px;
+ }
+  .feature-list li:nth-child(2){ 
+		font-family: "Roboto", Arial, sans-serif;
+	font-size: 16px;
+	line-height: 24px;
+	font-weight: 400;
+	text-transform: none;
+	margin-top: 40px;
+ }
+   .feature-list li:nth-child(3){ 
+		font-family: "Roboto", Arial, sans-serif;
+	font-size: 16px;
+	line-height: 24px;
+	font-weight: 700;
+	text-transform: none;
+	margin-top: 40px;
+	text-transform: uppercase;
+ }
+ .feature-list li:nth-child(4),
+ .feature-list li:nth-child(5),
+ .feature-list li:nth-child(6) {
+ 	text-transform: none;
+ 	font-weight: 400;
+ 	margin-top: 25px;
+ }
+  .feature-list img{
+  	margin:  0 10px 5px 0;
+  }
+  .feature-flex{
+  	display: flex;
+  	flex-direction: column;
+  }
+  .feature-item li:nth-child(2){
+	margin-top: 25px;
+	margin-bottom: 50px;
+	text-align: center;
+	font-family: "Roboto", Arial, sans-serif;
+	font-size: 16px;
+	line-height: 24px;
+	font-weight: 700;
+
+  }
+.item2 li{
+	display: inline;
+	font-family: "Roboto", Arial, sans-serif;
+	font-size: 45px;
+	line-height: 24px;
+	font-weight: 700;
+	margin-right: 5px;
+}
+.item3 li{
+	display: inline-block;
+	font-family: "Roboto", Arial, sans-serif;
+	font-size: 16px;
+	line-height: 18px;
+	font-weight: 400;
+	text-transform: none;
+	margin-right: 20px;
+	margin-top: 20px;
+}
+/*конец cтилизации блока О нашей дизайн-студии */
+/*Стилизация блока Сайты разработанные нашей студией */
+.brands {
+	min-height: 180px;
+	border-bottom: 1px solid #eeeeee;
+}
+.brands ul {
+	margin: 0;
+	padding: 0;
+}
+.brands-flex li{
+
+	margin-top: 50px;
+	opacity: 0.2;
+list-style: none;
+}
+.brands-flex li:hover{
+	opacity: 1;
+}
+.brands-flex li:active{
+	opacity: 0.1;
+}
+.brands-flex {
+	display: flex;
+	justify-content: space-around;
+}
+/*конец cтилизации Сайты разработанные нашей студией */
+/*Стилизация блока Контакты */
+.contact-contanier {
+	margin-top: 80px;
+	position: relative;
+	min-height: 420px;
+	background-image: url(../img/map-marker.png.jpg);
+	background-repeat: no-repeat;
+	background-position: 50% 50%;
+}
+.adress li {
+	list-style: none;
+}
+.adress {
+	top: 50px;
+	left: 0px;
+	position: absolute;
+	height: 320px;
+	width: 310px;
+	background-color: #ffffff;
+	color: #000000;
+
+}
+.adress li:first-child {
+	margin-top: 38px;
+	margin-left: 10px;
+	font-family: "Roboto", Arial, sans-serif;
+	font-size: 18px;
+	line-height: 30px;
+	font-weight: 700;
+}
+.adress li:nth-child(2) {
+	color: #666666;
+	margin-top: 20px;
+	margin-left: 10px;
+	font-family: "Roboto", Arial, sans-serif;
+	font-size: 16px;
+	line-height: 18px;
+	font-weight: 400;
+	text-transform: none;
+}
+.adress li:nth-child(3) {
+	color: #666666;
+	margin-top: 20px;
+	margin-left: 10px;
+	font-family: "Roboto", Arial, sans-serif;
+	font-size: 16px;
+	line-height: 18px;
+	font-weight: 400;
+	text-transform: none;
+}
+.button {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-family: "Roboto", Arial, sans-serif;
+	font-size: 16px;
+	line-height: 24px;
+	font-weight: 400;
+	border-radius: 5px;
+	background-color: #fb565a;
+	color: #ffffff;
+	width: 220px;
+	height: 50px;
+	margin-top: 40px;
+	margin-left: 10px;
+	text-transform: uppercase;
+}
+.button:hover{
+	background-color: #e74246;
+	color: #fdf2f3;
+}
+.button:active{
+	background-color: #d7373b;
+	color: #e26f72;
+}
+/*конец cтилизации блока Контакты */
+/*Стилизация блока footer */
+.main-footer {
+	display: flex;
+	min-height: 220px;
+}
+.main-footer ul{
+	list-style: none;
+}
+.social {
+	display: flex;
+	background-image: url(../img/fb-icon.png);
+	background-position: 50% 50%;
+}
+.social li{
+	margin-right: 15px;
+		height: 80px;
+	width: 80px;
+	border-radius: 50%;
+	background-color: #e1e1e1;
+		
+}
+.social li:hover{
+	background-color: #e74246;
+}
+.social li:first-child {
+	margin-left: 140px;
+	background-image: url(../img/vk-icon.png);
+	background-position: 50% 50%;
+	background-repeat: no-repeat;
+
+}
+.social li:first-child:active {
+	background-image: url(../img/vk-icon2.png);
+}
+.social li:nth-child(2):active  {
+	
+	background-image: url(../img/fb-icon2.png);
+	
+}
+.social li:last-child:active  {
+	
+	background-image: url(../img/insta-icon2.png);
+
+}
+.social li:nth-child(2) {
+	
+	background-image: url(../img/fb-icon.png);
+	background-position: 50% 50%;
+	background-repeat: no-repeat;
+}
+.social li:last-child {
+	
+	background-image: url(../img/insta-icon.png);
+	background-position: 50% 50%;
+	background-repeat: no-repeat;
+}
+.be-friend li:first-child{
+	font-family: "Roboto", Arial, sans-serif;
+	font-size: 36px;
+	line-height: 36px;
+	font-weight: 700;
+}
+.be-friend li:last-child{
+	font-family: "Roboto", Arial, sans-serif;
+	font-size: 16px;
+	line-height: 22px;
+	font-weight: 400;
+	color: #444444;
+	text-transform: none;
+	margin-top: 20px;
+}
