@@ -13,13 +13,13 @@
 		<div class="background-contanier1">
 		<nav class="main-navigation">
 			 <div class="main-navigation-wrapper">
-			<a href="#" class="main-header-logo">
+			<a href="index.html" class="main-header-logo">
 				<img src="img/nerds-logo.png" height="65" width="160" alt="Логотип сайта Нёрдс">
 			</a>
 			
 		
 			<ul class="site-navigation">
-				<li><a href="#">Студия</a></li>
+				<li><a href="index.html">Студия</a></li>
 				<li><a href="#">Клиенты</a></li>
 				<li><a href="#">Магазин</a></li>
 				<li><a href="#">Контакты</a></li>
@@ -44,12 +44,13 @@
 			<form action="#" method="get" class="filter">
 				<fieldset>
 					<legend>Стоимость:</legend>
-				<input type="range" min="0" max="5" id="size" value="0">
+				<input type="range" min="0" max="15000" id="size" value="20" class="range-slider">
 				<div class="min-max">
+
 				<label for="range-min">ОТ</label>	
-					<input type="text" placeholder="0" >
+					<input type="text" placeholder="0" id="range-min">
 					<label for="range-max">ДО</label>
-					<input type="text" placeholder="15 000">
+					<input type="text" placeholder="15 000" id="range-max">
 					</div>
 				</fieldset>
 				<fieldset class="filter-grid">
@@ -65,7 +66,7 @@
 					</p>
 				</fieldset>
 				<fieldset class="filter-feature">
-					<legend >Особенности</legend>
+					<legend >Особенности:</legend>
 					<p><input  type="checkbox" id="slider" checked>
 						<label for="slider">Слайдер</label>
 					</p>
@@ -203,34 +204,8 @@
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 <section class="contacts">
+	
 			<h2 class="visually-hidden">Наш адресс 191186, г. Санкт-Петербург, ул. Б. Конюшенная, д.19/8, телефон +78122757575</h2>
 			<div class="contact-contanier">
 				<ul class="adress">
@@ -241,6 +216,8 @@
 				</ul>
 			</div>
 		</section>
+
+		
 		<footer class="main-footer">
 			<ul class="social"> 
 				<li></li>
@@ -249,7 +226,8 @@
 			</ul>
 			<ul class="be-friend"> 
 			<li>Давайте дружить, это выгодно!</li>
-			<li>Скидка 10% для друзей из социальных сетей.</li>
+			<li>Скидка 10% для друзей из социальных сетей.
+			</li>
 			</ul>
 		</footer>
 
